@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeeMatchesActivity"
+    android:background="@color/primary"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+    <TextView
+        android:id="@+id/matches_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.5"
+        android:text="Matches"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/see_matches_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_height="70dp"
+        android:background="@color/primary"
+        app:itemTextColor="@color/bottom_navigation_color"
+        app:itemIconSize="40dp"
+        app:itemIconTint="@color/bottom_navigation_color"
+        app:menu="@menu/see_matches_menu"
+        android:outlineSpotShadowColor="@color/primary"
+        android:layout_below="@id/matches_tv"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/see_matches_nav_bar"
+        android:id="@+id/see_match_frame_layout"
+        android:paddingLeft="25dp"/>
+
+
+</RelativeLayout>

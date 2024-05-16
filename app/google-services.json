@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "72808582782",
+    "firebase_url": "https://myfirstapp-a2210-default-rtdb.firebaseio.com",
+    "project_id": "myfirstapp-a2210",
+    "storage_bucket": "myfirstapp-a2210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72808582782:android:952ff5da8a1722f7d3522f",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu0LE4NckgFkxL6WrQil-xYn4kqo0m71I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

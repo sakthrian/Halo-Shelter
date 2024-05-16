@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/aboutustxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Halo Shelter is a shared housing marketplace designed to assist students, young professionals, and individuals in discovering rooms, roommates, and properties that align with their preferences. This platform enables users to list their available spare rooms, seek accommodation, or collaborate with others to share a house."
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="20dp"
+        android:text="rate us"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</LinearLayout>

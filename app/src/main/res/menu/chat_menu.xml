@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="chats"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:id="@+id/chat_bottom"/>
+
+    <item android:title="Friends"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_people_alt_24"
+        android:id="@+id/friends_bottom"/>
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/removelistingtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Remove Listing"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.1"
+        android:text="Are you sure you want to remove your listing?"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupremovelisting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="7dp">
+
+        <RadioButton
+            android:id="@+id/fulfilled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="My Requirement is fulfiled"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:letterSpacing="0.05"/>
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/not_fulfilled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No, My Requirement is not fulfilled and i am still looking"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:letterSpacing="0.05"
+           />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            android:id="@+id/removelisting_confirm_button"
+            android:background="@drawable/custom_button"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:id="@+id/removelisting_cancel_button"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_button"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCardRequest"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/recycler_color"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/recrequestImage"
+            android:padding="8dp"
+            android:src="@drawable/photo_upload" />
+
+        <TextView
+            android:id="@+id/rec_request_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/recrequestImage"
+            android:letterSpacing="0.2"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/recrequestImage"
+            android:layout_below="@+id/rec_request_name"
+            android:letterSpacing="0.3"
+            android:text="has requested"
+            android:textColor="@color/grey"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

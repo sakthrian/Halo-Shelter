@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCardMyTeam"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/recycler_color"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/recMyTeamImage"
+            android:padding="8dp"
+            android:src="@drawable/photo_upload" />
+
+        <TextView
+            android:id="@+id/rec_MyTeam_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/recMyTeamImage"
+            android:letterSpacing="0.2"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/recMyTeamImage"
+            android:layout_below="@+id/rec_MyTeam_name"
+            android:letterSpacing="0.3"
+            android:text="See Profile"
+            android:textColor="@color/grey"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

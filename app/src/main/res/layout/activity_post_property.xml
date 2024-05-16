@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NeedRoommateActivity"
+    android:background="@color/primary">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/primary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:text="Post your Property Detail"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="23.8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:layout_marginTop="10dp"
+                android:text="so that other user can contact you"
+                android:letterSpacing="0.15"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Upload Your Property Image"
+                    android:fontFamily="monospace"/>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/photo_upload"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/property_image_upload"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Property Location"
+                    android:fontFamily="monospace"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Enter your location..."
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/grey"
+                    android:textSize="20dp"
+                    android:id="@+id/property_location"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Rent per Month"
+                    android:fontFamily="monospace"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="5000"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_baseline_currency_rupee_24"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/grey"
+                    android:textSize="20dp"
+                    android:id="@+id/property_rent_amount"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Contact Number"
+                    android:fontFamily="monospace"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/grey"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/grey"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:hint="9999 999 999"
+                    android:id="@+id/contact_no_pp"/>
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show your number to others"
+                    android:textColor="@color/grey"
+                    android:textSize="15dp"
+                    android:fontFamily="monospace"
+                    android:id="@+id/show_contact_switch_pp"
+                    android:checked="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Looking for"
+                    android:fontFamily="monospace"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/bottom_navigation_color"
+                        android:buttonTint="@color/bottom_navigation_color"
+                        android:text="Family"
+                        android:textSize="20dp"
+                        android:letterSpacing="0.3"
+                        android:id="@+id/family_checkbox"/>
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/bottom_navigation_color"
+                        android:buttonTint="@color/bottom_navigation_color"
+                        android:text="batchelor"
+                        android:textSize="20dp"
+                        android:letterSpacing="0.3"
+                        android:id="@+id/batchelor_checkbox"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/bottom_navigation_color"
+                        android:buttonTint="@color/bottom_navigation_color"
+                        android:text="Student"
+                        android:textSize="20dp"
+                        android:letterSpacing="0.3"
+                        android:id="@+id/student_checkbox"/>
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/bottom_navigation_color"
+                        android:buttonTint="@color/bottom_navigation_color"
+                        android:text="couples"
+                        android:textSize="20dp"
+                        android:letterSpacing="0.3"
+                        android:id="@+id/couples_checkbox"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Duration of Minimum Stay"
+                    android:fontFamily="monospace"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="months/years (eg:1 month)"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/grey"
+                    android:backgroundTint="@color/grey"
+                    android:textSize="20dp"
+                    android:id="@+id/stay_duration"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/grey"
+                    android:text="Set your Preferences"
+                    android:fontFamily="monospace"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Smoking"
+                    android:fontFamily="monospace"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/smoking_spinner"
+                    android:popupBackground="@drawable/custom_spinner_background" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Drinking"
+                    android:fontFamily="monospace"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/drinking_spinner"
+                    android:popupBackground="@drawable/custom_spinner_background" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Overnight Guests"
+                    android:fontFamily="monospace"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/overnight_guest_spinner"
+                    android:popupBackground="@drawable/custom_spinner_background" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Food Habits"
+                    android:fontFamily="monospace"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/food_habits_spinner"
+                    android:popupBackground="@drawable/custom_spinner_background" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/post_property_submit_btn"
+                android:background="@drawable/custom_button"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"/>
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:id="@+id/post_property_progressbar"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNeedRoommateActivity"
+    android:background="@color/primary">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/primary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="monospace"
+                android:text="Edit your Room Detail"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:layout_marginTop="10dp"
+                android:text="so that other user can contact you"
+                android:letterSpacing="0.15"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Your Location"
+                    android:fontFamily="monospace"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Enter your location..."
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/grey"
+                    android:textSize="20dp"
+                    android:id="@+id/room_location_erm"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Rent per Person"
+                    android:fontFamily="monospace"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="5000"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/grey"
+                    android:drawableStart="@drawable/ic_baseline_currency_rupee_24"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/grey"
+                    android:textSize="20dp"
+                    android:id="@+id/room_rent_amount_erm"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Upload Room Image"
+                    android:fontFamily="monospace"/>
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/photo_upload"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/room_image_upload_erm"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Occupancy per room"
+                    android:fontFamily="monospace"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/occupancy_spinner_erm"
+                    android:popupBackground="@drawable/custom_spinner_background" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Looking for"
+                    android:fontFamily="monospace"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/gender_requirement_spinner_erm"
+                    android:popupBackground="@drawable/custom_spinner_background" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Contact Number"
+                    android:fontFamily="monospace"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/grey"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/grey"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:hint="9999 999 999"
+                    android:id="@+id/contact_no_erm"/>
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show your number to others"
+                    android:textColor="@color/grey"
+                    android:textSize="15dp"
+                    android:fontFamily="monospace"
+                    android:id="@+id/show_contact_switch_erm"
+                    android:checked="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/grey"
+                    android:text="Are you interested in making teams?"
+                    android:drawableEnd="@drawable/ic_baseline_info_24"
+                    android:fontFamily="monospace"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/making_team_spinner_erm"
+                    android:popupBackground="@drawable/custom_spinner_background" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/need_roommate_update_btn"
+                android:background="@drawable/custom_button"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"/>
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:layout_marginTop="8dp"
+                android:id="@+id/need_roommate_progressbar_erm"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>
